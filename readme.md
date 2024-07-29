@@ -1,0 +1,7 @@
+https://kauth.kakao.com/oauth/authorize?client_id=f6216629fd1ef75a0e3daa8512912a93&redirect_uri=https://example.com/oauth&response_type=code&scope=profile_nickname,friends,talk_message
+
+
+
+OIiFTXHmbe7yrilXh81gugVWVgcILG7Ar4DTdjniVLD86TrdR13BTQAAAAQKPCRZAAABkIuiyesq17LwdM8QAg
+
+f6216629fd1ef75a0e3daa8512912a93
