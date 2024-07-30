@@ -36,7 +36,8 @@ def test():
     for i in range(1,3):
         # 거탐 체크f
         val = f.detector(location='background', object_name='damu_{}'.format(str(i)))
-        if val >= 0.77:
+        print(val)
+        if val >= 0.795:
             print(val)
             print("대나무 무사 등장!!!!")
 

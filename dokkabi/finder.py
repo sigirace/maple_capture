@@ -17,7 +17,7 @@ red_upper = np.array([10, 255, 255], np.uint8)
 pc_name = socket.gethostname()
 
 class Finder:
-    def __init__(self, chat=(1729, 952, 2794, 993), map=(1739, 142, 2127, 253), background=(1736, 287, 3638, 750)):
+    def __init__(self, chat=(1, 947, 1002, 984), map=(11, 222, 355, 315), background=(4, 354, 1717, 914)):
         self.base_path = "/Users/sigi/kang_dev/maple/maple_capture/images"
         self.result_path = "/Users/sigi/kang_dev/maple/maple_capture/images/result"
         self.chat_loc = self.calculate_location(*chat)
@@ -84,7 +84,7 @@ class Finder:
         return filtered_coords
 
 
-    def find_match(self, template, target_name,threshold=0.65):
+    def find_match(self, template, target_name,threshold=0.6):
         # Load the template and target images
         
         target_path = os.path.join(self.base_path, "{}.png".format(target_name))

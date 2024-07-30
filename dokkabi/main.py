@@ -68,7 +68,8 @@ def check():
             print("=======================상태 체크=======================")
             # 저주 체크
             val = f.detector(location='chat', object_name="dis")
-            if val >= 0.55:
+            if val >= 0.45:
+                print("저주 발동! ,", val)
                 h.dispell()
 
             # 대나무 무사 체크
@@ -76,7 +77,8 @@ def check():
                 # 매크로 방지몹 체크
                 val = f.detector(location='background', object_name='damu_{}'.format(str(i)))
                 print(val)
-                if val >= 0.78:
+                if val >= 0.86:
+                    print("대나무 무사 등장! ,",val)
                     #copilot 작성
                     alarm.discord_send_message("대나무 무사 등장!!!!")
                     macro_key = False
@@ -129,8 +131,6 @@ def macro():
     elif red_user == 0 and message_key:
         alarm.discord_send_message("그냥 갔네.. 휴..")
         message_key = False
-    else:
-        print("이미 메세지를 보냈습니다. 빠른 대처를 원해요..")
 
 def main():
     global check_thread
