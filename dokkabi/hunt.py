@@ -8,7 +8,7 @@ class Hunt:
         self.buff_list = {'x': [180, None], 
                     'c': [180, None], 
                     # 'd': [180, None], 
-                    # 'f': [300, None], 
+                    'f': [300, None], 
                     'a': [600, None], 
                     'v': [55, None]}
 
