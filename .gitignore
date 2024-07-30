@@ -1,0 +1,26 @@
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore dependencies
+node_modules/
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
+
+# Exclude __pycache__ directory
+__pycache__/
